@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas</title>
+  </head>
+  <body>
+    <link rel="stylesheet" type="text/css" href="canvas.css" />
+
+    <canvas
+      id="myCanvasLine"
+      width="200"
+      height="100"
+      style="border: 2px solid #b65454"
+    ></canvas>
+    <canvas
+      id="myCanvasCircle"
+      width="200"
+      height="100"
+      style="border: 2px solid #131c99"
+    ></canvas>
+    <canvas
+      id="myCanvasText"
+      width="200"
+      height="100"
+      style="border: 2px solid #5fee0c"
+    ></canvas>
+    <canvas
+      id="myCanvasLgradient"
+      width="200"
+      height="100"
+      style="border: 2px solid #730ed1"
+    ></canvas>
+    <canvas
+      id="myCanvasCgradient"
+      width="200"
+      height="100"
+      style="border: 2px solid #087e8d"
+    ></canvas>
+    <p>Image to use:</p>
+    <img
+      id="galaxy"
+      src="Red-galaxy.jpg"
+      alt="Red-galaxy"
+      width="400"
+      height="400"
+    />
+
+    <p>Canvas to fill:</p>
+    <canvas
+      id="myCanvasDrawImg"
+      width="400"
+      height="400"
+      style="border: 1px solid #d3d3d3"
+    >
+    </canvas>
+
+    <p><button onclick="myCanvas()">Try it</button></p>
+
+    <canvas
+      id="canvasClock"
+      width="400"
+      height="400"
+      style="background-color: rgb(88, 8, 8)"
+    ></canvas>
+
+    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+    <script type="text/JavaScript" src="canvas.js"></script>
+  </body>
+</html>
